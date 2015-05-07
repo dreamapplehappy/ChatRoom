@@ -2,7 +2,7 @@
 var appId = 'det7pyzdvc9nu77pv4s7o2m9g0s0z1hauob2i68js86kah22';
 
 // 请换成你自己的一个房间的 conversation id（这是服务器端生成的）
-var roomId = 'dreamapple';
+var roomId = '554b4c72e4b0fe5138c274e6';
 
 // 每个客户端自定义的 id
 var clientId = 'LeanCloud';
@@ -62,19 +62,6 @@ function main() {
     rt.on('open', function() {
         firstFlag = false;
         showLog('服务器连接成功！');
-
-        room = rt.room({
-            members: [
-            'LeanCloud02'
-            ],
-            data: {
-                title: 'testTitle'
-            }
-        }, function(result) {
-            console.log('Room created callback');
-        });
-
-        roomId = room.id;
 
         // 获得已有房间的实例
         rt.room(roomId, function(object) {
