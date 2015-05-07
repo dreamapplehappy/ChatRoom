@@ -4,7 +4,7 @@ var app = express();
 var http = require('http').Server(app);
 // var socket = require('socket.io');
 // var io = socket.listen(http);
-var io = require('socket.io')(http);
+// var io = require('socket.io')(http);
 
 // 最后，必须有这行代码来使 express 响应 HTTP 请求
 app.listen();
@@ -20,7 +20,7 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
-io.on('connection', function(socket){
+/*io.on('connection', function(socket){
 	socket.emit('hello', "nima");
-});
+});*/
 
