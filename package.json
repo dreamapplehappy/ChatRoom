@@ -1,0 +1,25 @@
+{
+  "name": "ChatRoom",
+  "version": "1.0.0",
+  "description": "聊天室",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.4",
+    "jquery": "^2.1.4",
+    "socket.io": "^1.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dreamapplehappy/ChatRoom.git"
+  },
+  "author": "dreamapple",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dreamapplehappy/ChatRoom/issues"
+  },
+  "homepage": "https://github.com/dreamapplehappy/ChatRoom"
+}
