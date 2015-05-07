@@ -63,6 +63,19 @@ function main() {
         firstFlag = false;
         showLog('服务器连接成功！');
 
+        room = rt.room({
+            members: [
+            'LeanCloud02'
+            ],
+            data: {
+                title: 'testTitle'
+            }
+        }, function(result) {
+            console.log('Room created callback');
+        });
+
+        roomId = room.id;
+
         // 获得已有房间的实例
         rt.room(roomId, function(object) {
 
