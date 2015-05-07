@@ -1,1 +1,1 @@
-欢迎来到聊天室！
+Cloud code project for ChatRoom. Cloud Code Guide: https://cn.avoscloud.com/docs/cloud_code_guide.html
