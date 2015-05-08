@@ -30,6 +30,8 @@
 	}
 	.dialog-users-list .panel-body{
 		padding: 0px;
+	}
+	#cr-list{
 		overflow: auto;
 	}
 	.online{
