@@ -89,7 +89,7 @@ function main() {
                     }
                     
                     for(var i = 0; i < data.length; i++){
-                        (addLi(i))(data[i]);
+                        addLi(data[i]);
                     }
                     var l = data.length;
 
