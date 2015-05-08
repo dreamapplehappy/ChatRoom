@@ -39,7 +39,7 @@
 	}
 	.cr-input .form-group{
 		height: 45px;
-		width: 90%;
+		width: 90% !important;
 	}
 	.cr-input .form-control{
 		height: 45px;
