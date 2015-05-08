@@ -81,11 +81,15 @@ function main() {
                                 username;
                     var li = document.createElement('li');
                     li.innerHTML = user;
-                    
-                    for(var i = 0; i < data.length; i++){
-                        username = data[i];
+
+                    function addLi(name){
+                        username = name;
                         li.setAttribute("class","list-group-item");
                         userList.appendChild(li);
+                    }
+                    
+                    for(var i = 0; i < data.length; i++){
+                        (addLi(i))(data[i]);
                     }
                     var l = data.length;
 
@@ -105,9 +109,6 @@ function main() {
                             printWall.scrollTop = printWall.scrollHeight;
                         });
                     });
-                }).then(function(data){
-                    console.log(data);
-                }, function(error){
                 });
 
                 // 房间接受消息
