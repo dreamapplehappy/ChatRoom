@@ -51,4 +51,5 @@
 	}
 	#print-wall{
 		overflow:scroll;
+		height: 360px;
 	}
