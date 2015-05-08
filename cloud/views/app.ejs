@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Chat-Room</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="user-scalable=no">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/chat-room.css">
+    <!-- JavaScript -->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    Dreamapple
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- 登录框 -->
+    <div class="container-fluid">
+        <form class="form-inline cr-login">
+            <div class="form-group">
+                <label class="sr-only" for="cr-username">用户名</label>
+                <input type="text" class="form-control" id="cr-username" placeholder="用户名">
+            </div>
+            <button type="submit" class="btn btn-primary">登陆聊天室</button>
+            <button type="button" class="btn btn-danger">登出聊天室</button>
+        </form>
+        <hr />
+    </div>
+    <div class="container-fluid dialog">
+        <div class="row dialog-body">
+            <div class="col-md-2 dialog-users-list">
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">用户列表</div>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="badge online">在线</span>
+                                A
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge offline">断开</span>
+                                C
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge online">在线</span>
+                                B
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge offline">断开</span>
+                                D
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-10 dialog-content">
+                
+                <div class="panel panel-success dialog-content-up">
+                    <div class="panel-heading">聊天室</div>
+                    <div class="panel-body">
+                        <p>咱们结婚吧！</p>
+                    </div>
+                </div>
+                <div class="panel panel-success dialog-input">
+                    <div class="panel-heading">写消息</div>
+                    <div class="panel-body">
+                        <form class="form-inline cr-input">
+                            <div class="form-group">
+                                <label class="sr-only" for="cr-input-content">用户名</label>
+                                <input type="text" class="form-control" id="cr-input-content" placeholder="聊天内容">
+                            </div>
+                            <button type="submit" class="btn btn-primary">发送</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入插件，兼容低 IE8+ 等低版本浏览器，注意看下面的注释。如果不需要兼容，可以去掉这部分。 -->
+    <!--[if lt IE 10]>
+    <script type="text/javascript" src="../../plugin/web-socket-js/swfobject.js"></script>
+    <script type="text/javascript" src="../../plugin/web-socket-js/web_socket.js"></script>
+    <script type="text/javascript">
+    // 设置变量，配置插件中 WebSocketMain.swf 的引用路径
+    WEB_SOCKET_SWF_LOCATION = "../../plugin/web-socket-js/WebSocketMain.swf";
+    </script>
+    <![endif]-->
+    <!-- 引入插件部分结束 -->
+
+    <!-- 引入 LeanCloud 实时通信 SDK -->
+    <script src="/js/src/AV.realtime.js"></script>
+    <!-- Demo 逻辑文件 -->
+    
+</body>
+</html>

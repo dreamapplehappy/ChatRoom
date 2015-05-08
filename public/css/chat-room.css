@@ -1,0 +1,50 @@
+	.navbar-default{
+		background-color: rgb(113, 201, 205);
+		border-color: #FFF;
+		border-radius: 0px;
+	}
+	.navbar-brand{
+		color: #FFF !important;
+	}
+	.dialog .row{
+		margin: 0px;
+		padding: 0px;
+	}
+	.dialog-body{
+		height: 500px;
+	}
+	.dialog-content{
+		height: 100%;
+	}
+	.cr-login{
+		width: 80%;
+		padding-left: 30%;
+	}
+	.dialog-content .dialog-content-up{
+		height: 360px;
+	}
+	
+
+	.dialog-users-list .panel{
+		height: 500px;
+	}
+	.dialog-users-list .panel-body{
+		padding: 0px;
+	}
+	.online{
+		background-color: #449d44;
+	}
+	.offline{
+		background-color: #d9534f;
+	}
+	.cr-input .form-group{
+		height: 45px;
+		width: 90%;
+	}
+	.cr-input .form-control{
+		height: 45px;
+	}
+	.cr-input button{
+		height: 45px;
+		width: 9%;
+	}
