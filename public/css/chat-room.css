@@ -30,6 +30,7 @@
 	}
 	.dialog-users-list .panel-body{
 		padding: 0px;
+		overflow: auto;
 	}
 	.online{
 		background-color: #449d44;
@@ -51,5 +52,5 @@
 	}
 	#print-wall{
 		overflow:auto;
-		height: 339px;
+		height: 320px;
 	}
