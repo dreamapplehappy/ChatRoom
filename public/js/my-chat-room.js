@@ -14,6 +14,7 @@ var crList = $('#cr-list');
 var crSend = $('#cr-send');
 var crUsername = $('#cr-username');
 var crMsg = $('#cr-msg');
+var printWall = $('#printWall');
 
 crLogin.click(main);
 crSend.click(sendMsg);
