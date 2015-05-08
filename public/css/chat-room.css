@@ -49,3 +49,6 @@
 		height: 45px;
 		width: 9%;
 	}
+	#print-wall{
+		overflow:scroll;
+	}
