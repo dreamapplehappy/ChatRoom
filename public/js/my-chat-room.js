@@ -85,11 +85,11 @@ function main() {
                     function addLi(name){
                         username = name;
                         li.setAttribute("class","list-group-item");
-                        userList.appendChild(li);
+                        return userList.appendChild(li);
                     }
                     
                     for(var i = 0; i < data.length; i++){
-                        addLi(data[i]);
+                        (addLi())(data[i]);
                     }
                     var l = data.length;
 
