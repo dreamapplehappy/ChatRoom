@@ -8,13 +8,13 @@ var connection = true;
 var log = false;
 var msgTime;
 
-var crLogin = $('#cr-login');
-var crLogout = $('#cr-logout');
-var crList = $('#cr-list');
-var crSend = $('#cr-send');
-var crUsername = $('#cr-username');
-var crMsg = $('#cr-msg');
-var printWall = $('#printWall');
+var crLogin = $('#cr-login')[0];
+var crLogout = $('#cr-logout')[0];
+var crList = $('#cr-list')[0];
+var crSend = $('#cr-send')[0];
+var crUsername = $('#cr-username')[0];
+var crMsg = $('#cr-msg')[0];
+var printWall = $('#printWall')[0];
 
 function bindEvent(dom, eventName, fun) {
     if (window.addEventListener) {
