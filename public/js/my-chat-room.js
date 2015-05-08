@@ -19,11 +19,15 @@ var firstFlag = true;
 // 用来标记历史消息获取状态
 var logFlag = false;
 
+var username;
+
+var closeBtn = document.getElementById('cr-logout');
 var openBtn = document.getElementById('cr-login');
 var sendBtn = document.getElementById('cr-send');
 var inputName = document.getElementById('cr-username');
 var inputSend = document.getElementById('cr-msg');
 var printWall = document.getElementById('print-wall');
+var userList = document.getElementById('cr-list')
 
 // 拉取历史相关
 // 最早一条消息的时间戳
@@ -73,6 +77,14 @@ function main() {
                 // 获取成员列表
                 room.list(function(data) {
                     showLog('当前 Conversation 的成员列表：', data);
+                    var user = '<li class="list-group-item">'+
+                                '<span class="badge online">在线</span>'+
+                                username+
+                                '</li>';
+                    for(var i = 0; i < data.length; i++){
+                        username = data[i];
+                        userList.appendChild(user);
+                    }
                     var l = data.length;
 
                     // 如果超过 500 人，就踢掉一个。
