@@ -83,9 +83,11 @@ function main() {
                     li.innerHTML = user;
                     
                     for(var i = 0; i < data.length; i++){
-                        username = name;
-                        li.setAttribute("class","list-group-item");
-                        userList.appendChild(li);
+                        (function(j){
+                            username = data[j];
+                            li.setAttribute("class","list-group-item");
+                            userList.appendChild(li);
+                        })(i);
                     }
                     var l = data.length;
 
