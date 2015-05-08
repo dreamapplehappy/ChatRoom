@@ -27,14 +27,14 @@
     </nav>
     <!-- 登录框 -->
     <div class="container-fluid">
-        <form class="form-inline cr-login">
+        <div class="form-inline cr-login">
             <div class="form-group">
                 <label class="sr-only" for="cr-username">用户名</label>
                 <input type="text" class="form-control" id="cr-username" placeholder="用户名">
             </div>
-            <button type="submit" class="btn btn-primary" id="cr-login">登陆聊天室</button>
-            <button type="button" class="btn btn-danger" id="cr-logout">登出聊天室</button>
-        </form>
+            <button class="btn btn-primary" id="cr-login">登陆聊天室</button>
+            <button class="btn btn-danger" id="cr-logout">登出聊天室</button>
+        </div>
         <hr />
     </div>
     <div class="container-fluid dialog">
@@ -70,20 +70,20 @@
                 
                 <div class="panel panel-success dialog-content-up">
                     <div class="panel-heading">聊天室</div>
-                    <div class="panel-body" id="printWall">
+                    <div class="panel-body" id="print-wall">
                         <p>咱们结婚吧！</p>
                     </div>
                 </div>
                 <div class="panel panel-success dialog-input">
                     <div class="panel-heading">写消息</div>
                     <div class="panel-body">
-                        <form class="form-inline cr-input">
+                        <div class="form-inline cr-input">
                             <div class="form-group">
                                 <label class="sr-only" for="cr-msg">用户名</label>
                                 <input type="text" class="form-control" id="cr-msg" placeholder="聊天内容">
                             </div>
-                            <button type="submit" class="btn btn-primary" id="cr-send">发送</button>
-                        </form>
+                            <button class="btn btn-primary" id="cr-send">发送</button>
+                        </div>
                     </div>
                 </div>
 
