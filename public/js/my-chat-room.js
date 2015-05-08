@@ -82,7 +82,7 @@ function main() {
                                 username+
                                 '</li>';
                     for(var i = 0; i < data.length; i++){
-                        username = data[i];
+                        // username = data[i];
                         userList.appendChild(user);
                     }
                     var l = data.length;
