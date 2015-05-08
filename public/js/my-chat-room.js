@@ -84,6 +84,7 @@ function main() {
                     
                     for(var i = 0; i < data.length; i++){
                         username = data[i];
+                        li.setAttribute("class","list-group-item");
                         userList.appendChild(li);
                     }
                     var l = data.length;

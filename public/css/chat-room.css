@@ -50,6 +50,6 @@
 		width: 9%;
 	}
 	#print-wall{
-		overflow:scroll;
+		overflow:auto;
 		height: 339px;
 	}
