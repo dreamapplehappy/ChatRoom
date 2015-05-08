@@ -16,10 +16,19 @@ var crUsername = $('#cr-username');
 var crMsg = $('#cr-msg');
 var printWall = $('#printWall');
 
-crLogin.click(main);
-crSend.click(sendMsg);
+function bindEvent(dom, eventName, fun) {
+    if (window.addEventListener) {
+        dom.addEventListener(eventName, fun);
+    } else {
+        dom.attachEvent('on' + eventName, fun);
+    }
+}
 
-/*bindEvent(document.body, 'keydown', function(e) {
+
+bindEvent(crLogin, 'click', main);
+bindEvent(crSend, 'click', sendMsg);
+
+bindEvent(document.body, 'keydown', function(e) {
     if (e.keyCode === 13) {
         if (firstFlag) {
             main();
@@ -27,10 +36,10 @@ crSend.click(sendMsg);
             sendMsg();
         }
     }
-});*/
+});
 
-
-function main() {
+function main(e) {
+	e.preventDefault();
     showLog('正在链接服务器，请等待。。。');
     var val = crUsername.val();
     if (val) {
@@ -88,7 +97,8 @@ function main() {
     });
 }
 
-function sendMsg() {
+function sendMsg(e) {
+	e.preventDefault();
     if (connection) {
         alert('请先连接服务器！');
         return;
