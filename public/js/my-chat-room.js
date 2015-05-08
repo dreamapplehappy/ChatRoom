@@ -105,6 +105,9 @@ function main() {
                             printWall.scrollTop = printWall.scrollHeight;
                         });
                     });
+                }).then(function(data){
+                    console.log(data);
+                }, function(error){
                 });
 
                 // 房间接受消息
