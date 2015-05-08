@@ -81,15 +81,11 @@ function main() {
                                 username;
                     var li = document.createElement('li');
                     li.innerHTML = user;
-
-                    function addLi(name){
-                        username = name;
-                        li.setAttribute("class","list-group-item");
-                        return userList.appendChild(li);
-                    }
                     
                     for(var i = 0; i < data.length; i++){
-                        (addLi())(data[i]);
+                        username = name;
+                        li.setAttribute("class","list-group-item");
+                        userList.appendChild(li);
                     }
                     var l = data.length;
 
