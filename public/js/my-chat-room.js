@@ -77,13 +77,14 @@ function main() {
                 // 获取成员列表
                 room.list(function(data) {
                     showLog('当前 Conversation 的成员列表：', data);
-                    var user = '<li class="list-group-item">'+
-                                '<span class="badge online">在线</span>'+
-                                username+
-                                '</li>';
+                    var user ='<span class="badge online">在线</span>'+
+                                username;
+                    var li = document.createElement('li');
+                    li.innerHTML = user;
+                    
                     for(var i = 0; i < data.length; i++){
-                        // username = data[i];
-                        userList.appendChild(user);
+                        username = data[i];
+                        userList.appendChild(li);
                     }
                     var l = data.length;
 
