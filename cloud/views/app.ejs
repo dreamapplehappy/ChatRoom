@@ -32,8 +32,8 @@
                 <label class="sr-only" for="cr-username">用户名</label>
                 <input type="text" class="form-control" id="cr-username" placeholder="用户名">
             </div>
-            <button type="submit" class="btn btn-primary">登陆聊天室</button>
-            <button type="button" class="btn btn-danger">登出聊天室</button>
+            <button type="submit" class="btn btn-primary" id="cr-login">登陆聊天室</button>
+            <button type="button" class="btn btn-danger" id="cr-logout">登出聊天室</button>
         </form>
         <hr />
     </div>
@@ -44,7 +44,7 @@
                 <div class="panel panel-info">
                     <div class="panel-heading">用户列表</div>
                     <div class="panel-body">
-                        <ul class="list-group">
+                        <ul class="list-group" id="cr-list">
                             <li class="list-group-item">
                                 <span class="badge online">在线</span>
                                 A
@@ -79,10 +79,10 @@
                     <div class="panel-body">
                         <form class="form-inline cr-input">
                             <div class="form-group">
-                                <label class="sr-only" for="cr-input-content">用户名</label>
-                                <input type="text" class="form-control" id="cr-input-content" placeholder="聊天内容">
+                                <label class="sr-only" for="cr-msg">用户名</label>
+                                <input type="text" class="form-control" id="cr-msg" placeholder="聊天内容">
                             </div>
-                            <button type="submit" class="btn btn-primary">发送</button>
+                            <button type="submit" class="btn btn-primary" id="cr-send">发送</button>
                         </form>
                     </div>
                 </div>
